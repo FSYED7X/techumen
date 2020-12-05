@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    background: #9DDEF2;
+}
+nav{
+    display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+            color: #fff;
+            padding: 0.5% 2%;
+        background-color: #061BD7;
+
+    #logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        img{
+            height: 60px;
+            width: 60px;
+            object-fit: cover;
+            border: 2px solid #000;
+            border-radius: 100%;
+        }
+    }
+    #signup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 11px;
+            input{
+                cursor: pointer;
+            }
+        }
+       
+    }
+}
+
+button{
+    width: fit-content;
+    padding: 5px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+
+#ide{
+    padding: 2% 5%;
+
+    h1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+        span{
+            font-size: 20px;
+        }
+        font-size: 40px;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        margin-bottom: 40px;
+        img{
+            height: 90px;
+            width: 90px;
+            object-fit: cover;
+        }
+        h3{
+            font-size: 30px;
+            letter-spacing: 0.05em;
+            margin-bottom: 2%;
+        }
+        button{
+            background-color: #061BD7;
+            color: #fff;
+            font-weight: bolder;
+            letter-spacing: 0.03em;
+            font-size: 20px;
+        }
+    }
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5%;
+    gap: 20%;
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 3px 3px;
+        text-decoration: none;
+        padding-bottom: 5px;
+        &:nth-last-child(){
+            text-decoration: underline!important;
+        }
+        &:hover {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+            background-position: 0 100%;
+            background-size: auto 6px;
+            background-repeat: repeat-x;
+            text-decoration: none;
+          }
+    }
+}
+
+
+.carousel{
+    padding: 1%;
+}
+.mySlides,.mySlides2 {
+    display: none;
+    img{
+        width: 100%;
+        height: 70vh;
+        vertical-align: middle;
+        object-fit: cover;
+        object-position:center;
+        border-radius: 10px;
+
+    }
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+//   margin-top: -22px;
+  color: #000;
+//   background-color: rgba(0,0,0,0.8);
+
+  font-weight: bold;
+  font-size: 70px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+//   background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+#c1{
+
+    .text {
+      color: #000;
+      font-size: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    font-weight: 300;
+    padding: 5% 25%;
+      text-align: center;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0.4);
+            line-height: 1.5em;
+    
+    }
+}
+
+
+#c2{
+    padding: 2% 5%;
+    h1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+        span{
+            font-size: 20px;
+        }
+        font-size: 40px;
+    }
+    img{
+        object-position: 0 58%;
+    }
+button{
+    background-color: #061BD7;
+    color: white;
+    font-size: 20px;
+}
+    .text {
+      color: #000;
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+    font-weight: bolder;
+      text-align: center;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0.4);
+            line-height: 1.5em;
+    
+    }
+}
+
+/* The dots/bullets/indicators */
+.dot,.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #333;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
